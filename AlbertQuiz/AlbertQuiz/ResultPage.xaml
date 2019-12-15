@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlbertQuiz.ResultPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <!--Quiz complete header -->
+            <Label Text="Quiz Complete"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   AbsoluteLayout.LayoutBounds=".5, .1, 500, 220" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <!--Button -->
+            <Button x:Name="Result"
+                    AbsoluteLayout.LayoutBounds=".5, .5, 175, 45" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Text="Get Reult" 
+                    BackgroundColor="Blue" 
+                    Clicked="Result_Clicked"/>
+            <Label x:Name="Lbl_Result"
+                   Text=" "/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

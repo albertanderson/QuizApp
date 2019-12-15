@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              BackgroundImage="Best.jpg"
+             x:Class="AlbertQuiz.Question6">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--Question -->
+             <Label Text="What film won oscar best in 2018?"
+                     Font="30"
+                     BackgroundColor="Gray" 
+                   TextColor="Purple"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <!--Button -->
+            <Button x:Name="Incorrect"
+                Text="Dunkirk"
+                    TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Incorrect_Clicked"/>
+
+            <!--Button -->
+            <Button  x:Name="Correct"
+                Text="The Shape Of Water"
+                     TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" 
+                    Clicked="Correct_Clicked"/>
+
+            <!--Button -->
+            <Button x:Name="Incorrect2"
+                Text="Get Out"
+                    TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Incorrect2_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

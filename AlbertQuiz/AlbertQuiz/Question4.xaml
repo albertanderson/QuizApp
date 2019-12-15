@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImage="Wcup.jpg"
+             x:Class="AlbertQuiz.Question4">
+    <ContentPage.Content>
+        <!--Question -->
+        <StackLayout>
+            <Label Text="Who won the world football world cup in 2010?"
+                   Font="30"
+                    BackgroundColor="Gray" 
+                   TextColor="Purple"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <!--Button -->
+            <Button x:Name="Incorrect"
+                     BackgroundColor="Blue" 
+                     TextColor="White"
+                Text="France"
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Incorrect_Clicked"/>
+
+            <!--Button -->
+            <Button  x:Name="Incorrect2"
+                      BackgroundColor="Blue" 
+                      TextColor="White"
+                Text="Germany"
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" 
+                    Clicked="Incorrect2_Clicked"/>
+
+            <!--Button -->
+            <Button x:Name="Correct"
+                     BackgroundColor="Blue"
+                     TextColor="White"
+                Text="Spain"
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Correct_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

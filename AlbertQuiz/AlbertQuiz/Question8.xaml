@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              BackgroundImage="Taoiseach.png"
+             x:Class="AlbertQuiz.Question8">
+    <ContentPage.Content>
+        <!--Question -->
+        <StackLayout>
+            <Label Text="who was the Taoiseach of Ireland in 2007?"
+                    Font="30"
+                    BackgroundColor="Gray" 
+                   TextColor="Purple"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <!--Button -->
+            <Button x:Name="Incorrect"
+                Text="Brain Cowen"
+                    TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Incorrect_Clicked"/>
+
+            <!--Button -->
+            <Button  x:Name="Correct"
+                Text="Bertie Ahern"
+                     TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" 
+                    Clicked="Correct_Clicked"/>
+
+            <!--Button -->
+            <Button x:Name="Incorrect2"
+                Text="Leo Varadkar"
+                    TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Incorrect2_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

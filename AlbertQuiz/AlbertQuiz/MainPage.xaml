@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AlbertQuiz"
+             BackgroundImage="QuizLogo.jpg"
+             x:Class="AlbertQuiz.MainPage">
+
+    <!-- Start Quiz Button -->
+    <AbsoluteLayout>
+        <Button x:Name="Button_StartQuiz" AbsoluteLayout.LayoutBounds=".5, .6, 175, 45" AbsoluteLayout.LayoutFlags="PositionProportional"
+            Text="Start Quiz" 
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Button_StartQuiz_Clicked"/>
+
+        <!-- Place new controls here -->
+        <Label Text=" Welcome to the quiz"
+                   TextColor="Purple"
+               AbsoluteLayout.LayoutBounds=".5, .4, 175, 45" AbsoluteLayout.LayoutFlags="PositionProportional"
+                 HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"/>
+        </AbsoluteLayout>
+
+</ContentPage>

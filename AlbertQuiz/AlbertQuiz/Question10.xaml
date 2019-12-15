@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImage="Samsung.jpg"
+             x:Class="AlbertQuiz.Question10">
+    <ContentPage.Content>
+        <!-- Question -->
+        <StackLayout>
+             <Label Text="When was the first Samsung Galaxy Smart phone released?"
+                     Font="30"
+                     BackgroundColor="Gray" 
+                   TextColor="Purple"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <!-- Button -->
+            <Button x:Name="Incorrect"
+                Text="2008"
+                    TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Incorrect_Clicked"/>
+
+            <!-- Button -->
+            <Button  x:Name="Correct"
+                Text="2009"
+                     TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" 
+                    Clicked="Correct_Clicked"/>
+
+            <!-- Button -->
+            <Button x:Name="Incorrect2"
+                Text="2006"
+                    TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Incorrect2_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

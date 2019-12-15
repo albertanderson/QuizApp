@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImage="Oscars.jpg"
+             x:Class="AlbertQuiz.Question5">
+    <ContentPage.Content>
+        <!--Question -->
+        <StackLayout>
+            <Label Text="Who won best actor 2018?"
+                    Font="30"
+                    BackgroundColor="Gray" 
+                   TextColor="Purple"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <!--Button -->
+            <Button x:Name="Correct"
+                Text="Gary Oldman"
+                    TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Correct_Clicked"/>
+
+            <!--Button -->
+            <Button  x:Name="Incorrect"
+                Text="James Franco"
+                     TextColor="White"
+                      BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" 
+                    Clicked="Incorrect_Clicked"/>
+
+            <!--Button -->
+            <Button x:Name="Incorrect2"
+                Text="Tom Hanks"
+                    TextColor="White"
+                     BackgroundColor="Blue" 
+                  HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+                    Clicked="Incorrect2_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
